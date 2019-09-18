@@ -1,4 +1,16 @@
-PRODUCT,MIN_AGE,MAX_AGE,MIN_SALARY,MAX_SALARY,RISK_SCORE
-INSURANCE,10,40,15000,80000,3
-MUTUAL_FUND1,18,40,25000,50000,4
-MUTUAL_FUND2,28,50,35000,55000,45
+PRODUCT,MIN_AGE,MAX_AGE,MIN_SALARY,MAX_SALARY,RISK_SCORE,URL,DESCRIPTION
+Equity,18,35,80000,100000000.00,9,,
+Debt,28,60,10000,100000000.00,4,,
+Hybrid,21,80,10000,100000000.00,6,,
+FD account,18,80,10000,100000000.00,4,,
+Smart money,18,80,10000,100000000.00,7,,
+CC,18,60,0,100000000.00,1,,
+All Life Insurance,18,80,50000,100000000.00,1,,
+Home,18,80,30000,100000000.00,5,,
+Personal,18,80,10000,100000000.00,7,,
+SIP,18,80,5000,100000000.00,5,,
+DMAT,18,80,25000,100000000.00,7,,
+Premier account,18,80,300000,100000000.00,1,https://www.hsbc.co.in/premier/,HSBC Premier provides personal support to help you manage your personal economy 
+Advanced account,18,80,500000,100000000.00,1,https://www.hsbc.co.in/advance/,"At HSBC, we would not claim to play a starring role in your successes, but we are
+there to help you in every way that we can. Together, We Advance."
+basic savings account,18,80,0,49999.00,1,https://www.hsbc.co.in/accounts/products/basic-savings/,Basic Savings Bank Deposit Account offered by HSBC India lets you avail banking services without fees or a minimum balance requirement.
