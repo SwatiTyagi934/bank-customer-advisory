@@ -24,7 +24,6 @@ def loadProductCsv():
          else:
            # print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
              p1 = Product(row[0], row[1],row[2],row[3],row[4],row[5])
-             print(p1.product_name,p1.min_age,p1.max_age,p1.min_salary,p1.max_salary,p1.risk_score)
              product_list.append(p1)
              line_count += 1
     
