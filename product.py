@@ -2,6 +2,8 @@
 
 import csv
 
+import pandas as pd
+
 product_list = []
 
 
@@ -35,8 +37,20 @@ def getProductSuggestion(age,salary,cal_risk):
         if int(age) >= int(product.min_age) and int(age) <= int(product.max_age):
             if float(salary) >= float(product.min_salary) and float(salary) <= float(product.max_salary):
                 if int(cal_risk)-2 <= int(product.risk_score) and int(cal_risk)+2 >= int(product.risk_score):
-                     suggested_product.append(product.product_name) 
-    return suggested_product
+                     suggested_product.append(product) 
+    return getTopThree(suggested_product,cal_risk)
+
+
+def getTopThree(suggested_product,cal_risk):
+    suggestedTopDF =[]
+    for pro in suggested_product:
+        diff=int(pro.risk_score)-int(cal_risk)
+        suggestedTopDF.append([pro,abs(diff)])
+    data=pd.DataFrame(suggestedTopDF)
+    data.columns = ['x','y']
+    data=data.sort_values('y').head(3)
+    return data.x
+
 
 
 
